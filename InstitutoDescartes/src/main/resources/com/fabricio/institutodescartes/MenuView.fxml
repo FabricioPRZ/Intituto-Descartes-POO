@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fabricio.institutodescartes.controllers.MenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e0072" height="61.0" stroke="#ffffff00" strokeType="INSIDE" width="600.0" />
+      <Text fill="WHITE" layoutX="257.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENÚ">
+         <font>
+            <Font name="CoolveticaRg-Italic" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="82.0" fitWidth="74.0" layoutX="522.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addRegistro" layoutX="80.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#onMouseClickAddRegistro" prefHeight="61.0" prefWidth="177.0" style="-fx-background-color: #3e0072;" text="Agregar Registro" textFill="WHITE">
+         <font>
+            <Font name="CoolveticaRg-Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateRegistro" layoutX="344.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#onMouseClickUpdateRegistro" prefHeight="61.0" prefWidth="177.0" style="-fx-background-color: #3e0072;" text="Actualizar Registro" textFill="WHITE">
+         <font>
+            <Font name="CoolveticaRg-Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="seeRegistro" layoutX="212.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#onMouseClickSeeRegistro" prefHeight="61.0" prefWidth="177.0" style="-fx-background-color: #3e0072;" text="Ver Registro" textFill="WHITE">
+         <font>
+            <Font name="CoolveticaRg-Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="437.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#onMouseClickExitButton" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #C10000;" text="Salir" textFill="WHITE">
+         <font>
+            <Font name="CoolveticaRg-Regular" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
